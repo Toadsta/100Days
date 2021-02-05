@@ -8,10 +8,9 @@ print(len(input("What is your name?")))
 a = input("a: ")
 b = input("b: ")
 
-switcha = a
-switchb = b
-a = switchb
-b = switcha
+c = a
+a = b
+b = c
 
 print("a: " + a)
 print("b: " + b)
