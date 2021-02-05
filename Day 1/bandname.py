@@ -1,5 +1,4 @@
-print("I am going to make you a band name!")
-print("First whats the name of your town?")
+print("I am going to make you a band name!\nFirst whats the name of your town?")
 town = input()
 print("Great, now whats the name of your first pet?")
 pet = input()
