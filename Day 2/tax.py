@@ -13,6 +13,8 @@ finalpayment = float(billtax) / float(people)
 
 #I added this round function as the bill sometimes came out as a really long string the 2 means to a decial point of 2
 finalpayment = round(finalpayment, 2)
+#This is formating it so the finall amount is always to 2dp and never 0 or 1
+finalpayment = "{:.2f}".format(finalpayment)
 
 #The str changes the number into a string so I can add the text to the front. If youre unsure of type use print(type("thing"))
 print(f"Each person should pay ${finalpayment}" )
