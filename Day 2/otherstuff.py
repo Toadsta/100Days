@@ -20,6 +20,16 @@ print("Hello"[0])
 1 + 1 #adding
 1 - 1 #subtracting
 1 * 1 #times
-1 / 1 #divide
+1 / 1 #divide makes it a float
+1 // 1 #floor division makes it an int
 1 ** 1 #to the power of
 print(3 * (3 + 3) / 3 - 3 )
+
+#shorthand
+
+score = 0
+#user scores a point
+score += 1
+#this bit of code adds a point to the score, and is quicker than typing score = score + 1
+#you could also use -= /= etc.
+print(score)
