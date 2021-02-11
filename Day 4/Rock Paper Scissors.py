@@ -13,27 +13,56 @@ else:
 choiceSelection = [0, 1, 2]
 computerChoice = random.choice(choiceSelection)
 
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+gameImages = [rock, paper, scissors]
+
 if userChoice == 0:
     if computerChoice == 0:
-        print("The computer chose rock, it's a draw!.")
+        print(f"The computer chose:\n{gameImages[computerChoice]}\nIt's a draw!.")
     elif computerChoice == 1:
-        print("The computer chose paper, you loose!")
+        print(f"The computer chose:\n{gameImages[computerChoice]}\nYou loose!")
     else:
-        print("The computer chose scissors, you win!")
+        print(f"The computer chose:\n{gameImages[computerChoice]}\nYou win!")
 elif userChoice == 1:
     if computerChoice == 0:
-        print("The computer chose rock, you win!.")
+        print(f"The computer chose:\n{gameImages[computerChoice]}\nYou win!.")
     elif computerChoice == 1:
-        print("The computer chose paper, it's a draw!!")
+        print(f"The computer chose:\n{gameImages[computerChoice]}\nIt's a draw!!")
     else:
-        print("The computer chose scissors, you loose!")
+        print(f"The computer chose:\n {gameImages[computerChoice]}\nYou loose!")
 elif userChoice == 2:
     if computerChoice == 0:
-        print("The computer chose rock, you loose!.")
+        print(f"The computer chose:\n{gameImages[computerChoice]}\nYou loose!.")
     elif computerChoice == 1:
-        print("The computer chose paper, you win!!")
+        print(f"The computer chose:\n{gameImages[computerChoice]}\nYou win!")
     else:
-        print("The computer chose scissors, it's a draw!")
+        print(f"The computer chose:\n{gameImages[computerChoice]} \nIt's a draw!")
 else:
     print("Sorry that is not an option")
 
