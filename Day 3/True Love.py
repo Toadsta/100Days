@@ -4,7 +4,7 @@
 #not E # means as long as E isnt present the code will run
 
 #lower changes all the string to lower case
-name1 = (input("What is you're name? "))
+name1 = (input("What is your name? "))
 name2 = (input("What is their name? " ))
 
 name1 = name1.lower()
@@ -19,7 +19,7 @@ TrueLove = int(TrueLove)
 if TrueLove < 10 or TrueLove > 90 :
     print(f"Uh oh, its only a score of {TrueLove}, you go together aswell and diet coke and mentons ")
 elif TrueLove >= 10 and TrueLove <= 30:
-    print(f"You're amazing together, you should have kids!, the score is {TrueLove} ")
+    print(f"You're amazing together, you are amazeballs, the score is {TrueLove} ")
 elif TrueLove >= 30 and  TrueLove <= 60:
     print(f"Wow!, your love score is {TrueLove}, you are meant to be")
 else:
